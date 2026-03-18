@@ -1,26 +1,24 @@
 class MachineViolet < Formula
   desc "AI Dungeon Master for tabletop RPGs"
   homepage "https://github.com/octopollux/machine-violet"
-  version "1.0.8"
+  version "1.0.9"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/octopollux/machine-violet/releases/download/v#{version}/machine-violet-#{version}-darwin-arm64.tar.gz"
-      sha256 "6aa06ca24799aaa28a16b224a460e07ea2a7499b6706240e0c37aa7f2be8afa2"
+      url "https://github.com/octopollux/machine-violet/releases/download/v1.0.9/machine-violet-1.0.9-darwin-arm64.tar.gz"
+      sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/octopollux/machine-violet/releases/download/v#{version}/machine-violet-#{version}-linux-x64.tar.gz"
-      sha256 "af0c828f57117ed5ffb1304a2c3ae8f22b367f40969c2e9436a1973b04c84879"
+      url "https://github.com/octopollux/machine-violet/releases/download/v1.0.9/machine-violet-1.0.9-linux-x64.tar.gz"
+      sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     end
   end
 
   def install
-    # The binary expects prompts/, themes/, systems/ next to the executable.
-    # Install everything into libexec and symlink the binary into bin.
     libexec.install "machine-violet"
     libexec.install "prompts" if Dir.exist?("prompts")
     libexec.install "themes" if Dir.exist?("themes")
