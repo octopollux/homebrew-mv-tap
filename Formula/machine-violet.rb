@@ -1,19 +1,19 @@
 class MachineViolet < Formula
   desc "AI Dungeon Master for tabletop RPGs"
   homepage "https://github.com/octopollux/machine-violet"
-  version "1.0.9"
+  version "nightly"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/octopollux/machine-violet/releases/download/v1.0.9/machine-violet-1.0.9-darwin-arm64.tar.gz"
+      url "https://github.com/octopollux/machine-violet/releases/download/nightly/machine-violet-nightly-darwin-arm64.tar.gz"
       sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/octopollux/machine-violet/releases/download/v1.0.9/machine-violet-1.0.9-linux-x64.tar.gz"
+      url "https://github.com/octopollux/machine-violet/releases/download/nightly/machine-violet-nightly-linux-x64.tar.gz"
       sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     end
   end
@@ -29,6 +29,6 @@ class MachineViolet < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/machine-violet --version")
+    assert_match "machine-violet", shell_output("#{bin}/machine-violet --version")
   end
 end
