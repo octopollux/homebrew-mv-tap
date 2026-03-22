@@ -7,14 +7,14 @@ class MachineViolet < Formula
   on_macos do
     on_arm do
       url "https://github.com/octopollux/machine-violet/releases/download/nightly/machine-violet-nightly-darwin-arm64.tar.gz"
-      sha256 "058076a456d292280a9ef19782db4386c8a04ceb5bd58e1dfa56736c29fdb0c4"
+      sha256 "1228d56787bb5e686c9ae265e4bdb8815814c91e89c2e8f36164ff2f2890231e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/octopollux/machine-violet/releases/download/nightly/machine-violet-nightly-linux-x64.tar.gz"
-      sha256 "438bed6d50b4c2e4b7a95f47097705446ee83e9ed7dfcef1d98c4a1a1458500a"
+      sha256 "d22aa1bb34e4c03b97a944d42284bb69dda9413d66442cc0863ca3021efe4919"
     end
   end
 
