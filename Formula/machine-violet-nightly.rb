@@ -1,7 +1,7 @@
 class MachineVioletNightly < Formula
   desc "AI Dungeon Master for tabletop RPGs"
   homepage "https://github.com/octopollux/machine-violet"
-  version "1.1.0-nightly.20261021-0622"
+  version "1.1.0-nightly.20261022-0621"
 
   license "MIT"
 
@@ -10,14 +10,14 @@ class MachineVioletNightly < Formula
   on_macos do
     on_arm do
       url "https://github.com/octopollux/machine-violet/releases/download/nightly/machine-violet-nightly-darwin-arm64.tar.gz"
-      sha256 "fa13fb8460139dc5cedbb2f1756ac1a7edfa07ff948fe5dc393017c708840b70"
+      sha256 "96d476bfe1753ede347873d6284c6b2d74206f8f1c32273a102121a39e196717"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/octopollux/machine-violet/releases/download/nightly/machine-violet-nightly-linux-x64.tar.gz"
-      sha256 "6fe0cdde30d8ae3e898b71f8a70d58a61c2cccaccda798a410f70de46a1ed1e3"
+      sha256 "f0e8404410ebf3c342d14ae116bc3d50b883da4680233e3fb2743df294dadc11"
     end
   end
 
